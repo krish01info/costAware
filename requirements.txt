@@ -1,11 +1,40 @@
+# ==============================================================================
+# Cost-Aware Adaptive Verification for Long-Horizon LLM Agents
+# Project Dependencies
+# ==============================================================================
+
+# --- Core Agent & Workflow Orchestration ---
 langgraph>=0.2.0
+langchain>=0.3.0
 langchain-core>=0.3.0
 langchain-anthropic>=0.3.0
+langchain-openai>=0.2.0
+
+# --- LLM Providers & Cost/Token Tracking ---
 anthropic>=0.40.0
+openai>=1.0.0
+tiktoken>=0.7.0
+
+# --- Environment, Schema & Configuration Management ---
 pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# --- Numerical, Data Analysis & Statistical Processing ---
+numpy>=1.24.0
 pandas>=2.0.0
-matplotlib>=3.7.0
-plotly>=5.0.0
 scipy>=1.11.0
+
+# --- Evaluation, Progress Tracking & Visualizations ---
+matplotlib>=3.7.0
+seaborn>=0.13.0
+plotly>=5.0.0
+tabulate>=0.9.0
+rich>=13.0.0
+tqdm>=4.66.0
+
+# --- Testing & Quality Assurance ---
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
+pytest-cov>=4.1.0
